@@ -1,192 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Privacy Policy - [APP NAME]</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 24px;
-            color: #222;
-            background: #fff;
-        }
-
-        h1, h2 {
-            color: #111;
-        }
-
-        h1 {
-            margin-bottom: 8px;
-        }
-
-        .updated {
-            color: #666;
-            font-size: 0.9em;
-        }
-
-        a {
-            color: #1565c0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="Privacy Policy for [GAME NAME].">
+  <title>Privacy Policy | [GAME NAME]</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090a0d;
+      --panel: #111318;
+      --panel-soft: #151820;
+      --text: #f3f4f6;
+      --muted: #a3aab7;
+      --line: #262b36;
+      --accent: #a78bfa;
+      --accent-soft: rgba(167, 139, 250, .12);
+      --max: 860px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 50% -15%, rgba(124, 92, 220, .16), transparent 42%),
+        var(--bg);
+      color: var(--text);
+      font: 16px/1.75 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #c4b5fd; text-decoration: none; overflow-wrap: anywhere; }
+    a:hover { color: #ddd6fe; text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; padding: 72px 0 56px; }
+    .hero { margin-bottom: 30px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: #c4b5fd; background: var(--accent-soft);
+      border: 1px solid rgba(167,139,250,.22);
+      border-radius: 999px; padding: 6px 12px;
+      font-size: 12px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase;
+    }
+    h1 { margin: 18px 0 8px; font-size: clamp(2.4rem, 7vw, 4rem); line-height: 1.08; letter-spacing: -.055em; }
+    .intro { color: var(--muted); margin: 0; font-size: 1.05rem; }
+    .updated { display: inline-block; margin-top: 18px; color: var(--muted); font-size: .9rem; }
+    .layout { display: grid; grid-template-columns: 205px minmax(0, 1fr); gap: 24px; align-items: start; }
+    nav {
+      position: sticky; top: 24px; padding: 18px;
+      background: rgba(17,19,24,.82); border: 1px solid var(--line);
+      border-radius: 16px; backdrop-filter: blur(12px);
+    }
+    nav strong { display: block; margin: 0 0 10px; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    nav a { display: block; padding: 5px 0; color: #c0c5cf; font-size: .84rem; line-height: 1.45; }
+    nav a:hover { color: #fff; text-decoration: none; }
+    main { min-width: 0; }
+    section {
+      scroll-margin-top: 24px;
+      background: linear-gradient(145deg, rgba(21,24,32,.96), rgba(15,17,22,.96));
+      border: 1px solid var(--line); border-radius: 18px;
+      padding: 26px 28px; margin-bottom: 14px;
+    }
+    h2 { margin: 0 0 14px; font-size: 1.22rem; letter-spacing: -.02em; }
+    p { margin: 0 0 14px; color: #c8cdd6; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 16px; padding-left: 1.25rem; color: #c8cdd6; }
+    li { padding-left: 4px; margin: 5px 0; }
+    li::marker { color: var(--accent); }
+    .placeholder {
+      display: inline; color: #fbbf24; background: rgba(251,191,36,.09);
+      border: 1px solid rgba(251,191,36,.22); border-radius: 5px;
+      padding: 1px 5px; overflow-wrap: anywhere;
+    }
+    .notice {
+      margin-top: 12px; padding: 14px 16px; border-radius: 12px;
+      background: rgba(251,191,36,.07); border: 1px solid rgba(251,191,36,.2);
+      color: #e8d6a7; font-size: .92rem;
+    }
+    .contact p { margin-bottom: 8px; }
+    footer { text-align: center; color: #737b89; font-size: .82rem; padding-top: 24px; }
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 28px, var(--max)); padding-top: 42px; }
+      .layout { grid-template-columns: 1fr; gap: 14px; }
+      nav { position: static; }
+      nav .links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 2px 12px; }
+      section { padding: 22px 20px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="eyebrow">Privacy &amp; transparency</span>
+      <h1>Privacy Policy</h1>
+      <p class="intro">How [GAME NAME] handles information when you play.</p>
+      <span class="updated">Last updated: November 17, 2026</span>
+    </header>
 
-<h1>Privacy Policy</h1>
+    <div class="layout">
+      <nav aria-label="Table of contents">
+        <strong>On this page</strong>
+        <div class="links">
+          <a href="#introduction">1. Introduction</a>
+          <a href="#information">2. Information We Collect</a>
+          <a href="#advertising">3. Advertising</a>
+          <a href="#consent">4. Consent Management</a>
+          <a href="#game-center">5. Apple Game Center</a>
+          <a href="#analytics">6. Analytics</a>
+          <a href="#gdpr">7. GDPR</a>
+          <a href="#california">8. California Rights</a>
+          <a href="#children">9. Children's Privacy</a>
+          <a href="#retention">10. Data Retention</a>
+          <a href="#third-parties">11. Third-Party Services</a>
+          <a href="#changes">12. Changes</a>
+          <a href="#contact">13. Contact</a>
+        </div>
+      </nav>
 
-<p class="updated">
-    Last updated: [DATE]
-</p>
+      <main>
+        <section id="introduction">
+          <h2>1. Introduction</h2>
+          <p>This Privacy Policy explains how <span class="placeholder">[GAME NAME]</span> ("we", "our", or "us") collects, uses and protects information when you use our mobile game.</p>
+          <p>We respect your privacy and aim to comply with applicable privacy laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act as amended by the California Privacy Rights Act (CCPA/CPRA), and other applicable privacy regulations.</p>
+        </section>
 
-<p>
-    This Privacy Policy explains how <strong>[APP NAME]</strong>
-    ("we", "us", or "our") handles information when you use our mobile application.
-</p>
+        <section id="information">
+          <h2>2. Information We Collect</h2>
+          <p>We do not require users to create an account or register to play our game.</p>
+          <p>Depending on how you use the game and your device settings, the following information may be processed:</p>
+          <ul>
+            <li>Device information, including device type, operating system and identifiers.</li>
+            <li>IP address and approximate location derived from it.</li>
+            <li>Advertising identifiers, where available and permitted.</li>
+            <li>Advertising interactions and information about advertisements displayed.</li>
+            <li>App performance, diagnostics and crash information.</li>
+          </ul>
+          <p>Some of this information may be collected automatically by our advertising service providers.</p>
+        </section>
 
-<h2>1. Information We Collect</h2>
+        <section id="advertising">
+          <h2>3. Advertising – Google AdMob</h2>
+          <p>Our game uses Google AdMob to display advertisements.</p>
+          <p>Google AdMob may process information such as:</p>
+          <ul>
+            <li>Advertising identifiers.</li><li>IP addresses.</li><li>Device information.</li>
+            <li>Advertising interactions.</li><li>Approximate location.</li>
+            <li>App performance and diagnostic information.</li>
+          </ul>
+          <p>We use personalized advertising where permitted and where the applicable consent and privacy requirements are satisfied.</p>
+          <p>Depending on applicable regulations and user privacy choices, advertising availability and ad-serving modes may vary.</p>
+          <p>Google may process information in accordance with its own privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+        </section>
 
-<p>
-    We do not directly collect or store personally identifiable information
-    unless explicitly stated otherwise in this Privacy Policy.
-</p>
+        <section id="consent">
+          <h2>4. Consent Management – Google UMP</h2>
+          <p>We use Google's User Messaging Platform (UMP) to manage user privacy choices and consent.</p>
+          <p>UMP helps us display relevant privacy and consent messages, including messages relating to GDPR and US state privacy regulations.</p>
+          <p>Users may be able to accept, reject or modify their privacy choices depending on the applicable message and legal requirements.</p>
+          <p>For more information: <a href="https://developers.google.com/admob/ios/privacy" target="_blank" rel="noopener noreferrer">Google AdMob privacy and consent guidance</a>.</p>
+        </section>
 
-<p>
-    Our application may use third-party services that may collect information
-    automatically, including information such as:
-</p>
+        <section id="game-center">
+          <h2>5. Apple Game Center</h2>
+          <p>Our game optionally supports Apple Game Center.</p>
+          <p>You can play the game without creating a separate account with us.</p>
+          <p>If you choose to use Game Center, Apple may process information associated with your Game Center account, such as your player identifier, nickname, achievements and leaderboard information.</p>
+          <p>Game Center is provided by Apple and is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a>.</p>
+          <p>We use Game Center information only to provide the relevant game features.</p>
+        </section>
 
-<ul>
-    <li>Advertising identifiers</li>
-    <li>IP address</li>
-    <li>Device type and operating system</li>
-    <li>App usage and diagnostic information</li>
-    <li>Information necessary to display and measure advertisements</li>
-</ul>
+        <section id="analytics">
+          <h2>6. Analytics</h2>
+          <p>We do not use Firebase Analytics.</p>
+          <p>However, Google AdMob may collect certain advertising, performance and diagnostic information as described in this Privacy Policy.</p>
+        </section>
 
-<h2>2. Advertising</h2>
+        <section id="gdpr">
+          <h2>7. GDPR – European Users</h2>
+          <p>If you are located in the European Economic Area, United Kingdom or another jurisdiction where GDPR applies, you may have rights including:</p>
+          <ul>
+            <li>The right to access your personal information.</li>
+            <li>The right to request correction of inaccurate information.</li>
+            <li>The right to request deletion of personal information.</li>
+            <li>The right to restrict or object to certain processing.</li>
+            <li>The right to withdraw consent.</li>
+            <li>The right to lodge a complaint with a relevant data protection authority.</li>
+          </ul>
+          <p>Where consent is the legal basis for processing, you may withdraw it at any time.</p>
+        </section>
 
-<p>
-    We use <strong>Google AdMob</strong> to display advertisements in the application.
-    Google and its advertising partners may process information about your device
-    and app activity to provide, personalize, measure, and improve advertising,
-    subject to your choices and applicable law.
-</p>
+        <section id="california">
+          <h2>8. California Privacy Rights (CCPA/CPRA)</h2>
+          <p>California residents may have rights under applicable California privacy laws, including:</p>
+          <ul>
+            <li>The right to know what personal information is collected and how it is used.</li>
+            <li>The right to request deletion of personal information, subject to legal exceptions.</li>
+            <li>The right to correct inaccurate personal information.</li>
+            <li>The right to opt out of the sale or sharing of personal information, where applicable.</li>
+            <li>The right to limit certain uses of sensitive personal information, where applicable.</li>
+            <li>The right not to receive discriminatory treatment for exercising privacy rights.</li>
+          </ul>
+          <p>We provide applicable privacy choices through our consent management system.</p>
+        </section>
 
-<p>
-    For users in the European Economic Area, the United Kingdom, and Switzerland,
-    we use Google's consent management technology to request consent where required
-    by applicable data protection laws.
-</p>
+        <section id="children">
+          <h2>9. Children's Privacy</h2>
+          <p class="placeholder">[COMPLETE THIS SECTION BASED ON WHETHER YOUR GAME IS DIRECTED TO CHILDREN OR KNOWINGLY COLLECTS PERSONAL INFORMATION FROM CHILDREN.]</p>
+          <p>We do not knowingly collect personal information from children in violation of applicable laws.</p>
+          <div class="notice">Before publishing, replace the highlighted placeholder with a statement that accurately describes your game's audience, age rating, and data practices.</div>
+        </section>
 
-<h2>3. GDPR and Your Consent</h2>
+        <section id="retention">
+          <h2>10. Data Retention</h2>
+          <p>Personal information processed by our service providers may be retained according to their applicable retention policies and the purposes for which it was collected.</p>
+          <p>We do not operate a separate user registration system.</p>
+        </section>
 
-<p>
-    If you are located in the European Economic Area, the United Kingdom,
-    or another jurisdiction where consent is required, you may be asked to
-    provide consent before certain personal data is processed for advertising
-    purposes.
-</p>
+        <section id="third-parties">
+          <h2>11. Third-Party Services</h2>
+          <p>Our game uses the following third-party services:</p>
+          <ul>
+            <li>Google AdMob: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            <li>Google UMP: <a href="https://developers.google.com/admob/ios/privacy" target="_blank" rel="noopener noreferrer">Privacy and consent guidance</a></li>
+            <li>Apple Game Center: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
+          </ul>
+          <p>These services may process information according to their respective privacy policies.</p>
+        </section>
 
-<p>
-    Where applicable, you have the right to:
-</p>
+        <section id="changes">
+          <h2>12. Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time.</p>
+          <p>Any changes will be published on this page with an updated revision date.</p>
+        </section>
 
-<ul>
-    <li>Give or refuse consent to personalized advertising.</li>
-    <li>Withdraw or change your consent.</li>
-    <li>Object to certain processing of your personal data.</li>
-    <li>Request access to personal data concerning you.</li>
-    <li>Request correction or deletion of your personal data, where applicable.</li>
-</ul>
-
-<p>
-    You can manage your advertising privacy choices through the consent
-    options provided within the application.
-</p>
-
-<h2>4. Legal Basis for Processing</h2>
-
-<p>
-    Depending on the circumstances and applicable law, processing may be based on
-    your consent, our legitimate interests, or another lawful basis permitted
-    by applicable data protection legislation.
-</p>
-
-<h2>5. Third-Party Services</h2>
-
-<p>
-    Our application may use third-party services, including:
-</p>
-
-<ul>
-    <li>Google AdMob</li>
-    <li>Google Mobile Ads SDK</li>
-    <li>Google User Messaging Platform (UMP)</li>
-</ul>
-
-<p>
-    These services may process information in accordance with their own
-    privacy policies and applicable data protection requirements.
-</p>
-
-<p>
-    For more information about Google's privacy practices, please visit:
-</p>
-
-<p>
-    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-        Google Privacy Policy
-    </a>
-</p>
-
-<h2>6. Children's Privacy</h2>
-
-<p>
-    [APP NAME] is not intended for children under the age of [AGE].
-    We do not knowingly collect personal information from children in violation
-    of applicable law.
-</p>
-
-<h2>7. Data Retention</h2>
-
-<p>
-    We do not independently retain personal information collected through
-    third-party advertising services. Third-party providers may retain
-    information according to their own policies and applicable legal requirements.
-</p>
-
-<h2>8. Data Security</h2>
-
-<p>
-    We take reasonable measures to protect information processed in connection
-    with our application. However, no method of electronic transmission or
-    storage can be guaranteed to be completely secure.
-</p>
-
-<h2>9. Changes to This Privacy Policy</h2>
-
-<p>
-    We may update this Privacy Policy from time to time. Any changes will be
-    published on this page with an updated "Last updated" date.
-</p>
-
-<h2>10. Contact</h2>
-
-<p>
-    If you have questions about this Privacy Policy or your privacy rights,
-    please contact us at:
-</p>
-
-<p>
-    <strong>Email:</strong>
-    <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
-</p>
-
+        <section id="contact" class="contact">
+          <h2>13. Contact Us</h2>
+          <p>If you have questions about this Privacy Policy or wish to exercise your privacy rights, contact us:</p>
+          <p><strong>Developer / Company:</strong> <span class="placeholder">[YOUR DEVELOPER NAME]</span></p>
+          <p><strong>Email:</strong> <span class="placeholder">[YOUR CONTACT EMAIL]</span></p>
+          <p><strong>Game:</strong> <span class="placeholder">[GAME NAME]</span></p>
+          <p><strong>Website:</strong> <span class="placeholder">[YOUR WEBSITE URL]</span></p>
+        </section>
+      </main>
+    </div>
+    <footer>© <span id="year">2026</span> [GAME NAME]. All rights reserved.</footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
